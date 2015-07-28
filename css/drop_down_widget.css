@@ -1,0 +1,23 @@
+.selection{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media(max-width: 992px){
+  .add-new{
+    width: 100%;
+    text-align: center;
+  }
+}
+@media(min-width: 992px){
+  .add-new{
+    width: 100%;
+  }
+}
+
+
+.no-padding {
+  padding: 0px;
+}
+.no-margin {
+  margin: 0px;
+}
