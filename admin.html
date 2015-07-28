@@ -1,0 +1,87 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link href="css/simplex_bootstrap.css" rel="stylesheet"/>
+  </head>
+  <title>MAE FWD 2015 | Admin</title>
+  <body>
+    <div class="navbar-default navbar-fixed-top">
+      <center><a href="index.html" style="text-decoration:none"><img src="img/mae.fwd.logo.png" style="width: 15%"/>
+          <p style="font-size:30px">FWD 2015 Admin</p></a></center>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div style="margin-top: 190px" class="container-fluid">
+        <div class="col-md-4">
+          <center><img src="img/mae.fwd.logo.png"/></center>
+        </div>
+        <div class="col-md-8">
+          <div class="row">OG Number</div>
+          <div class="row">OG name</div>
+          <div class="row">OG Type</div>
+          <div class="row">OG Ranking</div>
+        </div>
+      </div>
+      <hr/>
+      <h2>Input the scores</h2>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="expEntry" class="col-sm-3 control-label">Experience Gained</label>
+          <div class="col-sm-9">
+            <div class="form-inline">
+              <select id="expAddOrSub" class="col-sm-1 form-control">
+                <option value="expAdd">Add</option>
+                <option value="expSub">Minus</option>
+              </select>
+              <input type="number" id="expEntry" class="col-sm-3 form-control"/>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="coinEntry" class="col-sm-3 control-label">Pokécoin</label>
+          <div class="col-sm-9">
+            <input type="number" id="coinEntry" class="form-control"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="capturedPokemon" class="col-sm-3 control-label">Catched Pokemon</label>
+          <div class="col-sm-9">
+            <div class="form-inline">
+              <select id="pokeType" class="col-sm-3 form-control">
+                <option value="None">Type</option>
+                <option value="Fire">Fire</option>
+                <option value="Water">Water</option>
+                <option value="Ice">Ice</option>
+                <option value="Physics">Physics</option>
+                <option value="Grass">Grass</option>
+              </select>
+              <select id="pokemonSelect" class="col-sm-3 form-control"></select>
+              <div class="col-sm-1"></div>
+              <button onclick="displayFunction()" class="col-sm-1 btn btn-default">Add</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="container-fluid">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <table id="displayTable" class="table">
+            <tr>
+              <td>Row 1</td>
+              <td>Row 2</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dropdownlist.js"></script>
+    <script src="js/displayTable.js"></script>
+  </body>
+</html>

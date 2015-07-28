@@ -1,0 +1,43 @@
+h2 Input the scores
+
+form.form-horizontal
+	.form-group
+			label.col-sm-3.control-label(for="expEntry") Experience Gained
+			.col-sm-9
+				.form-inline
+					select.col-sm-1.form-control#expAddOrSub
+						option(value="expAdd") Add
+						option(value="expSub") Minus
+					input.col-sm-3.form-control(type="number", id="expEntry")
+
+	.form-group
+		label.col-sm-3.control-label(for="coinEntry") Pokécoin
+		.col-sm-9
+			input.form-control(type="number", id="coinEntry")
+
+	.form-group
+		label.col-sm-3.control-label(for="capturedPokemon") Catched Pokemon
+		.col-sm-9
+			.form-inline
+				select.col-sm-3.form-control#pokeType
+					option(value="None") Type
+					option(value="Fire") Fire
+					option(value="Water") Water
+					option(value="Ice") Ice
+					option(value="Physics") Physics
+					option(value="Grass") Grass
+
+				select.col-sm-3.form-control#pokemonSelect
+
+				.col-sm-1
+				
+				button.col-sm-1.btn.btn-default(onclick="displayFunction()") Add
+
+.container-fluid
+	.col-sm-2
+	.col-sm-8
+		table.table#displayTable
+			tr
+				td Row 1
+				td Row 2
+	.col-sm-2
