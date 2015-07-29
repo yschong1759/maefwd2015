@@ -5,17 +5,35 @@ form.form-horizontal
 			label.col-sm-3.control-label(for="expEntry") Experience Gained
 			.col-sm-9
 				.form-inline
-					select.col-sm-1.form-control#expAddOrSub
-						option(value="expAdd") Add
-						option(value="expSub") Minus
-					input.col-sm-3.form-control(type="number", id="expEntry")
+					.btn-group(data-toggle="buttons", style="margin-right:10px")
+						label.btn.btn-primary.active Add
+							input(type="radio", name="expAddorMinus", id="option1" autocomplete="off", value="Add", checked)
+
+						label.btn.btn-primary Minus
+							input(type="radio", name="expAddorMinus", id="option2" autocomplete="off", value="Minus")
+						script.
+							$('#option2').on('click', function () {
+								$('#option2').radio('active');
+								$('#option1').radio('reset');}
+					input.form-control(type="number", id="expEntry")
 
 	.form-group
 		label.col-sm-3.control-label(for="coinEntry") Pokécoin
 		.col-sm-9
-			input.form-control(type="number", id="coinEntry")
+			.form-inline
+				.btn-group(data-toggle="buttons", style="margin-right:10px")
+					label.btn.btn-primary.active Add
+						input(type="radio", name="expAddorMinus", id="option1" autocomplete="off", value="Add", checked)
 
-	.form-group
+					label.btn.btn-primary Minus
+						input(type="radio", name="expAddorMinus", id="option2" autocomplete="off", value="Minus")
+					script.
+						$('#option2').on('click', function () {
+							$('#option2').radio('active');
+							$('#option1').radio('reset');}
+				input.form-control(type="number", id="coinEntry")
+
+	//.form-group
 		label.col-sm-3.control-label(for="capturedPokemon") Catched Pokemon
 		.col-sm-9
 			.form-inline

@@ -32,82 +32,80 @@
           <label for="expEntry" class="col-sm-3 control-label">Experience Gained</label>
           <div class="col-sm-9">
             <div class="form-inline">
-              <select id="expAddOrSub" class="col-sm-1 form-control">
-                <option value="expAdd">Add</option>
-                <option value="expSub">Minus</option>
-              </select>
-              <input type="number" id="expEntry" class="col-sm-3 form-control"/>
+              <div data-toggle="buttons" style="margin-right:10px" class="btn-group">
+                <label class="btn btn-primary active">Add
+                  <input type="radio" name="expAddorMinus" id="option1" autocomplete="off" value="Add" checked="checked"/>
+                </label>
+                <label class="btn btn-primary">Minus
+                  <input type="radio" name="expAddorMinus" id="option2" autocomplete="off" value="Minus"/>
+                </label>
+                <script>
+                  $('#option2').on('click', function () {
+                  	$('#option2').radio('active');
+                  	$('#option1').radio('reset');}
+                </script>
+              </div>
+              <input type="number" id="expEntry" class="form-control"/>
             </div>
           </div>
         </div>
         <div class="form-group">
           <label for="coinEntry" class="col-sm-3 control-label">Pokécoin</label>
           <div class="col-sm-9">
-            <input type="number" id="coinEntry" class="form-control"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="capturedPokemon" class="col-sm-3 control-label">Catched Pokemon</label>
-          <div class="col-sm-9">
             <div class="form-inline">
-              <select id="pokeType" class="col-sm-3 form-control">
-                <option value="None">Type</option>
-                <option value="Fire">Fire</option>
-                <option value="Water">Water</option>
-                <option value="Ice">Ice</option>
-                <option value="Physics">Physics</option>
-                <option value="Grass">Grass</option>
-              </select>
-              <select id="pokemonSelect" class="col-sm-3 form-control"></select>
-              <div class="col-sm-1"></div>
-              <button onclick="displayFunction()" class="col-sm-1 btn btn-default">Add</button>
+              <div data-toggle="buttons" style="margin-right:10px" class="btn-group">
+                <label class="btn btn-primary active">Add
+                  <input type="radio" name="expAddorMinus" id="option1" autocomplete="off" value="Add" checked="checked"/>
+                </label>
+                <label class="btn btn-primary">Minus
+                  <input type="radio" name="expAddorMinus" id="option2" autocomplete="off" value="Minus"/>
+                </label>
+                <script>
+                  $('#option2').on('click', function () {
+                  	$('#option2').radio('active');
+                  	$('#option1').radio('reset');}
+                </script>
+              </div>
+              <input type="number" id="coinEntry" class="form-control"/>
             </div>
           </div>
         </div>
+        <!--.form-group
+        label.col-sm-3.control-label(for="capturedPokemon") Catched Pokemon
+        .col-sm-9
+        	.form-inline
+        		select.col-sm-3.form-control#pokeType
+        			option(value="None") Type
+        			option(value="Fire") Fire
+        			option(value="Water") Water
+        			option(value="Ice") Ice
+        			option(value="Physics") Physics
+        			option(value="Grass") Grass
+        
+        		select.col-sm-3.form-control#pokemonSelect
+        
+        		.col-sm-1
+        		
+        		button.col-sm-1.btn.btn-default(onclick="displayFunction()") Add
+        
+        -->
       </form><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
       <h2>Catched pokemon</h2>
       <form class="form-horizontal container-fluid selection-form">
         <div class="form-group selection no-margin">
           <label for="select" class="col-md-1 control-label"><i class="fa fa-lg fa-minus-square"></i></label>
           <div class="col-md-5 no-padding">
-            <select id="select" class="form-control">
-              <option>None</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <select id="pokeType" class="form-control">
+              <option value="None">Type</option>
+              <option value="Fire">Fire</option>
+              <option value="Water">Water</option>
+              <option value="Ice">Ice</option>
+              <option value="Physics">Physics</option>
+              <option value="Grass">Grass</option>
             </select>
           </div>
           <div class="col-md-5 no-padding">
-            <select id="select" class="form-control">
-              <option>None</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="col-md-1"></div>
-        </div>
-        <div class="form-group selection no-margin">
-          <label for="select" class="col-md-1 control-label"><i class="fa fa-lg fa-minus-square"></i></label>
-          <div class="col-md-5 no-padding">
-            <select id="select" class="form-control">
-              <option>None</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="col-md-5 no-padding">
-            <select id="select" class="form-control">
-              <option>None</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+            <select id="pokemonSelect" class="col-sm-3 form-control"></select>
           </div>
           <div class="col-md-1"></div>
         </div>
