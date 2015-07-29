@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <link href="css/simplex_bootstrap.css" rel="stylesheet"/>
+    <script src="js/jquery-1.11.0.js"></script>
   </head>
   <title>MAE FWD 2015 | Admin</title>
   <body>
@@ -33,16 +34,16 @@
           <div class="col-sm-9">
             <div class="form-inline">
               <div data-toggle="buttons" style="margin-right:10px" class="btn-group">
-                <label class="btn btn-primary active">Add
-                  <input type="radio" name="expAddorMinus" id="option1" autocomplete="off" value="Add" checked="checked"/>
+                <label class="btn btn-info active">Add
+                  <input type="radio" name="expAddorMinus" id="option1" autocomplete="off" value="Add" checked="checked"/><img src="img/glyphicons-circle-plus.png"/>
                 </label>
                 <label class="btn btn-primary">Minus
-                  <input type="radio" name="expAddorMinus" id="option2" autocomplete="off" value="Minus"/>
+                  <input type="radio" name="expAddorMinus" id="option2" autocomplete="off" value="Minus"/><img src="img/glyphicons-circle-minus.png"/>
                 </label>
                 <script>
                   $('#option2').on('click', function () {
                   	$('#option2').radio('active');
-                  	$('#option1').radio('reset');}
+                  	$('#option1').radio('reset');} )
                 </script>
               </div>
               <input type="number" id="expEntry" class="form-control"/>
@@ -54,16 +55,16 @@
           <div class="col-sm-9">
             <div class="form-inline">
               <div data-toggle="buttons" style="margin-right:10px" class="btn-group">
-                <label class="btn btn-primary active">Add
-                  <input type="radio" name="expAddorMinus" id="option1" autocomplete="off" value="Add" checked="checked"/>
+                <label class="btn btn-info active">Add
+                  <input type="radio" name="expAddorMinus" id="option1" autocomplete="off" value="Add" checked="checked"/><img src="img/glyphicons-circle-plus.png"/>
                 </label>
                 <label class="btn btn-primary">Minus
-                  <input type="radio" name="expAddorMinus" id="option2" autocomplete="off" value="Minus"/>
+                  <input type="radio" name="expAddorMinus" id="option2" autocomplete="off" value="Minus"/><img src="img/glyphicons-circle-minus.png"/>
                 </label>
                 <script>
                   $('#option2').on('click', function () {
                   	$('#option2').radio('active');
-                  	$('#option1').radio('reset');}
+                  	$('#option1').radio('reset');} )
                 </script>
               </div>
               <input type="number" id="coinEntry" class="form-control"/>
@@ -117,7 +118,7 @@
       </form>
     </div>
     <div class="col-md-2"></div>
-    <script src="js/jquery-1.11.0.js"></script>
+    <!--script(src="js/jquery-1.11.0.js")-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/dropdownlist.js"></script>
     <script src="js/drop_down_widget.js"></script>
