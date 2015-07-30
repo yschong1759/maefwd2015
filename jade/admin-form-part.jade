@@ -1,0 +1,40 @@
+h2 Input the scores
+
+form.form-horizontal
+	.form-group
+		label.col-sm-3.control-label(for="expEntry") Experience Gained
+		.col-sm-9
+			.form-inline
+				.btn-group(data-toggle="buttons", style="margin-right:10px")
+					label.btn.btn-info.active Add
+						input(type="radio", name="expAddorMinus", id="option1" autocomplete="off", value="Add", checked)
+						img(src="img/glyphicons-circle-plus.png")
+					label.btn.btn-primary Minus
+						input(type="radio", name="expAddorMinus", id="option2" autocomplete="off", value="Minus")
+						img(src="img/glyphicons-circle-minus.png")
+					script.
+						$('#option2').on('click', function () {
+							$('#option2').radio('active');
+							$('#option1').radio('reset');} )
+				input.form-control(type="number", id="expEntry")
+
+	.form-group
+		label.col-sm-3.control-label(for="coinEntry") Pokécoin
+		.col-sm-9
+			.form-inline
+				.btn-group(data-toggle="buttons", style="margin-right:10px")
+					label.btn.btn-info.active Add
+						input(type="radio", name="expAddorMinus", id="option1" autocomplete="off", value="Add", checked)
+						img(src="img/glyphicons-circle-plus.png")
+					label.btn.btn-primary Minus
+						input(type="radio", name="expAddorMinus", id="option2" autocomplete="off", value="Minus")
+						img(src="img/glyphicons-circle-minus.png")
+					script.
+						$('#option2').on('click', function () {
+							$('#option2').radio('active');
+							$('#option1').radio('reset');} )
+				input.form-control(type="number", id="coinEntry")
+
+	include drop-down-widget.jade
+
+	button.btn.btn-default Submit
