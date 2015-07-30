@@ -14,6 +14,23 @@
   }
 }
 
+.zero-margin {
+  margin:0;
+}
+
+@media (max-width:992px){
+  .mobile-only{display:inherit}
+  .pc-only{display:none}}
+
+@media (min-width:992px){
+  .pc-only{display:inherit}
+  .mobile-only{display:none
+}
+
+.godown {
+  margin-top: 20px;
+}
+
 
 .no-padding {
   padding: 0px;
@@ -21,3 +38,4 @@
 .no-margin {
   margin: 0px;
 }
+

@@ -6954,12 +6954,11 @@ label {
   border-color: #dddddd;
 }
 
-.wrapper{
-  clear:both;
-}
-
 .zero-margin {
   margin:0;
+}
+.zero-padding {
+  padding: 0px;
 }
 
 @media (max-width:992px){
@@ -6969,8 +6968,21 @@ label {
 @media (min-width:992px){
   .pc-only{display:inherit}
   .mobile-only{display:none
+}}
+
+.img-div-bottom {
+  width: 85%;
+  position:absolute; 
+  top: 85%; 
+  color: Gold; 
+  font-size: 30px;
+  border-radius: 5px;
 }
 
-.godown {
-  margin-top: 20px;
+.img-div-onmobile{
+  color:Gold; 
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 5px;
 }
+

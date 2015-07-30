@@ -11,11 +11,35 @@ html
 	title MAE FWD 2015 | Admin
 
 	body
-		//include cover-page.jade
 
-		include admin-section.jade
+		.navbar-default.navbar-fixed-top
+			center
+				a(href="admin.html", style="text-decoration:none")
+					img(src="img/mae.fwd.logo.png", style="width: 15%")
+					p(style="font-size:30px") FWD 2015 Admin
 
-		//script(src="js/jquery-1.11.0.js")
+		include cover-page.jade
+
+		.container-fluid
+			.col-md-2
+			.col-md-8
+
+				.container-fluid(style="margin-top: 190px")
+					.col-md-4
+						center
+							img(src="img/mae.fwd.logo.png")
+					.col-md-8
+						.row OG Number
+						.row OG name
+						.row OG Type
+						.row OG Ranking
+
+				hr 
+
+				include admin-form-part.jade
+
+			.col-md-2
+
 		script(src="js/bootstrap.min.js")
 		script(src="js/dropdownlist.js")
 		script(src="js/drop_down_widget.js")

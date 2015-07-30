@@ -9,36 +9,50 @@
   </head>
   <title>MAE FWD 2015 | Admin</title>
   <body>
-    <!--include cover-page.jade-->
     <div class="navbar-default navbar-fixed-top">
-      <center><a href="index.html" style="text-decoration:none"><img src="img/mae.fwd.logo.png" style="width: 15%"/>
+      <center><a href="admin.html" style="text-decoration:none"><img src="img/mae.fwd.logo.png" style="width: 15%"/>
           <p style="font-size:30px">FWD 2015 Admin</p></a></center>
     </div>
     <div style="margin-top:200px" class="container">
-      <div class="col-md-2"></div>
-      <div class="col-md-4">
-        <div class="col-md-4">
-          <p class="pc-only">pc-only</p><img src="img/darkrai.png" class="mobile-only"/>
+      <div class="col-md-1"></div>
+      <div class="col-md-5 zero-margin zero-padding">
+        <div class="col-md-4"><img src="img/Darkrai.jpg" class="pc-only img-responsive center-block"/>
+          <div style="background-color:Black" class="img-div-bottom text-center zero-padding pc-only">Darkrai</div><img src="img/darkrai.png" class="mobile-only center-block"/>
+          <div style="background-color:Black" class="img-div-onmobile text-center mobile-only">Darkrai</div>
         </div>
-        <div class="col-md-4"> 
-          <p class="pc-only">pc-only</p><img src="img/suicine.png" class="mobile-only"/>
+        <div class="col-md-4"> <img src="img/Suicune.jpg" class="pc-only img-responsive center-block"/>
+          <div style="background-color:Blue" class="img-div-bottom text-center zero-padding pc-only">Suicune</div><img src="img/suicine.png" class="mobile-only center-block"/>
+          <div style="background-color:Blue" class="img-div-onmobile text-center mobile-only">Suicune</div>
         </div>
-        <div class="col-md-4">
-          <p class="pc-only">pc-only</p><img src="img/virizion.png" class="mobile-only"/>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="col-md-4">
-          <p class="pc-only">pc-only</p><img src="img/kyurem.png" class="mobile-only"/>
-        </div>
-        <div class="col-md-4">
-          <p class="pc-only">pc-only</p><img src="img/moltres.png" class="mobile-only"/>
-        </div>
-        <div class="col-md-4">
-          <p class="pc-only">pc-only</p><img src="img/lugia.png" class="mobile-only"/>
+        <div class="col-md-4"><img src="img/Virizion.jpg" class="pc-only img-responsive center-block"/>
+          <div style="background-color:Green" class="img-div-bottom text-center zero-padding pc-only">Virzion</div><img src="img/virizion.png" class="mobile-only center-block"/>
+          <div style="background-color:Green" class="img-div-onmobile text-center mobile-only">Virzion</div>
         </div>
       </div>
-      <div class="col md-2"></div>
+      <div class="col-md-5 zero-margin zero-padding">
+        <div class="col-md-4"><img src="img/Kyurem.jpg" class="pc-only img-responsive center-block"/>
+          <div style="background-color:Beige" class="img-div-bottom text-center zero-padding pc-only">Kyurem</div><img src="img/kyurem.png" class="mobile-only center-block"/>
+          <div style="background-color:Beige" class="img-div-onmobile text-center mobile-only">Kyurem</div>
+        </div>
+        <div class="col-md-4"><img src="img/Moltres.jpg" class="pc-only img-responsive center-block"/>
+          <div style="background-color:Red" class="img-div-bottom text-center zero-padding pc-only">Moltres</div><img src="img/moltres.png" class="mobile-only center-block"/>
+          <div style="background-color:Red" class="img-div-onmobile text-center mobile-only">Moltres</div>
+        </div>
+        <div class="col-md-4"><img src="img/Lugia.jpg" class="pc-only img-responsive center-block"/>
+          <div style="background-color:Purple" class="img-div-bottom text-center zero-padding pc-only">Lugia</div><img src="img/lugia.png" class="mobile-only center-block"/>
+          <div style="background-color:Purple" class="img-div-onmobile text-center mobile-only">Lugia</div>
+        </div>
+      </div>
+      <div class="col md-1"></div>
+    </div>
+    <div style="margin-top:200px" class="container">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">1</div>
+      <div class="col-md-2">2</div>
+      <div class="col-md-2">3</div>
+      <div class="col-md-2">4</div>
+      <div class="col-md-2">5</div>
+      <div class="col-md-1"></div>
     </div>
     <div class="container-fluid">
       <div class="col-md-2"></div>
@@ -55,100 +69,82 @@
           </div>
         </div>
         <hr/>
-        <h2>Input the scores</h2>
-        <form class="form-horizontal">
-          <div class="form-group">
-            <label for="expEntry" class="col-sm-3 control-label">Experience Gained</label>
-            <div class="col-sm-9">
-              <div class="form-inline">
-                <div data-toggle="buttons" style="margin-right:10px" class="btn-group">
-                  <label class="btn btn-info active">Add
-                    <input type="radio" name="expAddorMinus" id="option1" autocomplete="off" value="Add" checked="checked"/><img src="img/glyphicons-circle-plus.png"/>
-                  </label>
-                  <label class="btn btn-primary">Minus
-                    <input type="radio" name="expAddorMinus" id="option2" autocomplete="off" value="Minus"/><img src="img/glyphicons-circle-minus.png"/>
-                  </label>
-                  <script>
-                    $('#option2').on('click', function () {
-                    	$('#option2').radio('active');
-                    	$('#option1').radio('reset');} )
-                  </script>
+        <div class="container-fluid">
+          <h2>Input the scores</h2>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="expEntry" class="col-sm-3 control-label">Experience Gained</label>
+              <div class="col-sm-9">
+                <div class="form-inline">
+                  <div data-toggle="buttons" style="margin-right:10px" class="btn-group">
+                    <label class="btn btn-info active">Add
+                      <input type="radio" name="expAddorMinus" id="option1" autocomplete="off" value="Add" checked="checked"/><img src="img/glyphicons-circle-plus.png"/>
+                    </label>
+                    <label class="btn btn-primary">Minus
+                      <input type="radio" name="expAddorMinus" id="option2" autocomplete="off" value="Minus"/><img src="img/glyphicons-circle-minus.png"/>
+                    </label>
+                    <script>
+                      $('#option2').on('click', function () {
+                      	$('#option2').radio('active');
+                      	$('#option1').radio('reset');} )
+                    </script>
+                  </div>
+                  <input type="number" id="expEntry" class="form-control"/>
                 </div>
-                <input type="number" id="expEntry" class="form-control"/>
               </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="coinEntry" class="col-sm-3 control-label">Pokécoin</label>
-            <div class="col-sm-9">
-              <div class="form-inline">
-                <div data-toggle="buttons" style="margin-right:10px" class="btn-group">
-                  <label class="btn btn-info active">Add
-                    <input type="radio" name="expAddorMinus" id="option1" autocomplete="off" value="Add" checked="checked"/><img src="img/glyphicons-circle-plus.png"/>
-                  </label>
-                  <label class="btn btn-primary">Minus
-                    <input type="radio" name="expAddorMinus" id="option2" autocomplete="off" value="Minus"/><img src="img/glyphicons-circle-minus.png"/>
-                  </label>
-                  <script>
-                    $('#option2').on('click', function () {
-                    	$('#option2').radio('active');
-                    	$('#option1').radio('reset');} )
-                  </script>
+            <div class="form-group">
+              <label for="coinEntry" class="col-sm-3 control-label">Pokécoin</label>
+              <div class="col-sm-9">
+                <div class="form-inline">
+                  <div data-toggle="buttons" style="margin-right:10px" class="btn-group">
+                    <label class="btn btn-info active">Add
+                      <input type="radio" name="expAddorMinus" id="option1" autocomplete="off" value="Add" checked="checked"/><img src="img/glyphicons-circle-plus.png"/>
+                    </label>
+                    <label class="btn btn-primary">Minus
+                      <input type="radio" name="expAddorMinus" id="option2" autocomplete="off" value="Minus"/><img src="img/glyphicons-circle-minus.png"/>
+                    </label>
+                    <script>
+                      $('#option2').on('click', function () {
+                      	$('#option2').radio('active');
+                      	$('#option1').radio('reset');} )
+                    </script>
+                  </div>
+                  <input type="number" id="coinEntry" class="form-control"/>
                 </div>
-                <input type="number" id="coinEntry" class="form-control"/>
               </div>
             </div>
-          </div>
-          <!--.form-group
-          label.col-sm-3.control-label(for="capturedPokemon") Catched Pokemon
-          .col-sm-9
-          	.form-inline
-          		select.col-sm-3.form-control#pokeType
-          			option(value="None") Type
-          			option(value="Fire") Fire
-          			option(value="Water") Water
-          			option(value="Ice") Ice
-          			option(value="Physics") Physics
-          			option(value="Grass") Grass
-          
-          		select.col-sm-3.form-control#pokemonSelect
-          
-          		.col-sm-1
-          		
-          		button.col-sm-1.btn.btn-default(onclick="displayFunction()") Add
-          
-          -->
-        </form><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
-        <h2>Catched pokemon</h2>
-        <form class="form-horizontal container-fluid selection-form">
-          <div class="form-group selection no-margin">
-            <label for="select" class="col-md-1 control-label"><i class="fa fa-lg fa-minus-square"></i></label>
-            <div class="col-md-5 no-padding">
-              <select class="form-control pokeType">
-                <option value="None">Type</option>
-                <option value="Fire">Fire</option>
-                <option value="Water">Water</option>
-                <option value="Ice">Ice</option>
-                <option value="Physics">Physics</option>
-                <option value="Grass">Grass</option>
-              </select>
+          </form><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+          <h2>Catched pokemon</h2>
+          <form class="form-horizontal container-fluid selection-form">
+            <div class="form-group selection no-margin">
+              <label for="select" class="col-md-1 control-label"><i class="fa fa-lg fa-minus-square"></i></label>
+              <div class="col-md-5 no-padding">
+                <select class="form-control pokeType">
+                  <option value="None">Type</option>
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Ice">Ice</option>
+                  <option value="Physics">Physics</option>
+                  <option value="Grass">Grass</option>
+                </select>
+              </div>
+              <div class="col-md-5 no-padding">
+                <select class="col-sm-3 form-control pokemonSelect"></select>
+              </div>
+              <div class="col-md-1"></div>
             </div>
-            <div class="col-md-5 no-padding">
-              <select class="col-sm-3 form-control pokemonSelect"></select>
+            <div class="add-new">
+              <div class="col-md-5"></div>
+              <div class="col-md-5"></div>
+              <div class="col-md-1 btn btn-primary"><i class="fa fa-lg fa-plus-square">  Add</i></div>
             </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="add-new">
-            <div class="col-md-5"></div>
-            <div class="col-md-5"></div>
-            <div class="col-md-1 btn btn-primary"><i class="fa fa-lg fa-plus-square">  Add</i></div>
-          </div>
-        </form>
-        <button class="btn btn-default">Submit</button>
+          </form>
+          <button class="btn btn-default">Submit</button>
+        </div>
       </div>
       <div class="col-md-2"></div>
     </div>
-    <!--script(src="js/jquery-1.11.0.js")-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/dropdownlist.js"></script>
     <script src="js/drop_down_widget.js"></script>
