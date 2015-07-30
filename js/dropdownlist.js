@@ -1,4 +1,4 @@
-jQuery(function($) {
+$('.selection-form').on('change', function(e){
     var matching = {
         'Fire': ['Charmander', 'Charmeleon', 'Charizard'],
         'Water': ['Squirtle', 'Wartortle', 'Blastoise'],
@@ -7,14 +7,15 @@ jQuery(function($) {
         'Physics': ['Ralts', 'Kirlia', 'Gardevoir'],
         'Dark': ['Deino', 'Zweilous', 'Hydreigon']
     }
-    
-    var $matching = $('#pokemonSelect');
-    $('#pokeType').change(function () {
-        var pokeType = $(this).val(), poke = matching[pokeType] || [];
-        
-        var html = $.map(poke, function(poke){
-            return '<option value="' + poke + '">' + poke + '</option>'
+
+    e.stopPropagation();
+    e.preventDefault();
+    var clicked = e.target;
+    if ($(clicked).is(".pokeType")) {
+      var poke_type=matching[$(clicked).val()] || [];
+      var poke_html=$.map(poke_type, function(poke_type){
+            return '<option value="' + poke_type + '">' + poke_type + '</option>'
         }).join('');
-        $matching.html(html)
-    });
-});
+      $(clicked).parent().next().children(".pokemonSelect").html(poke_html);
+    }  
+  });
