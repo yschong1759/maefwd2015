@@ -4,21 +4,24 @@
 			img(src="img/mae.fwd.logo.png", style="width: 15%")
 			p(style="font-size:30px") FWD 2015 Admin
 
-.col-md-2
-.col-md-8
+include cover-page.jade
 
-	.container-fluid(style="margin-top: 190px")
-		.col-md-4
-			center
-				img(src="img/mae.fwd.logo.png")
-		.col-md-8
-			.row OG Number
-			.row OG name
-			.row OG Type
-			.row OG Ranking
+.container-fluid
+	.col-md-2
+	.col-md-8
 
-	hr 
+		.container-fluid(style="margin-top: 190px")
+			.col-md-4
+				center
+					img(src="img/mae.fwd.logo.png")
+			.col-md-8
+				.row OG Number
+				.row OG name
+				.row OG Type
+				.row OG Ranking
 
-	include admin-part.jade
+		hr 
 
-.col-md-2
+		include admin-part.jade
+
+	.col-md-2
