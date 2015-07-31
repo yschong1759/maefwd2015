@@ -1,52 +1,52 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <link href="css/simplex_bootstrap.css" rel="stylesheet"/>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link href="./css/drop_down_widget.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/simplex_bootstrap.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/drop_down_widget.css" rel="stylesheet">
   </head>
   <title>MAE FWD 2015 - Live Score Page</title>
   <body>
     <div class="navbar-default navbar-fixed-top">
-      <center><a href="index.html" style="text-decoration:none"><img src="img/mae.fwd.logo.png" style="width: 15%"/>
+      <center><a href="index.html" style="text-decoration:none"><img src="img/mae.fwd.logo.png" style="width: 15%">
           <p style="font-size:30px">FWD 2015 Livescore update</p></a></center>
     </div>
     <div style="margin-top:200px" class="container">
       <div class="col-md-1"></div>
       <div class="col-md-5 zero-margin zero-padding">
-        <div class="col-md-4"><img src="img/Moltres.jpg" class="pc-only img-responsive center-block"/>
-          <div style="background-color:Red" class="img-div-bottom text-center zero-padding pc-only">Moltres</div><img src="img/moltres.png" class="mobile-only center-block"/>
+        <div data-bind="moltres" class="col-md-4 clans"><img src="img/Moltres.jpg" class="pc-only img-responsive center-block">
+          <div style="background-color:Red" class="img-div-bottom text-center zero-padding pc-only">Moltres</div><img src="img/moltres.png" class="mobile-only center-block">
           <div style="background-color:Red" class="img-div-onmobile text-center mobile-only">Moltres</div>
         </div>
-        <div class="col-md-4"> <img src="img/Lugia.jpg" class="pc-only img-responsive center-block"/>
-          <div style="background-color:Purple" class="img-div-bottom text-center zero-padding pc-only">Lugia</div><img src="img/lugia.png" class="mobile-only center-block"/>
+        <div data-bind="lugia" class="col-md-4 clans"> <img src="img/Lugia.jpg" class="pc-only img-responsive center-block">
+          <div style="background-color:Purple" class="img-div-bottom text-center zero-padding pc-only">Lugia</div><img src="img/lugia.png" class="mobile-only center-block">
           <div style="background-color:Purple" class="img-div-onmobile text-center mobile-only">Lugia</div>
         </div>
-        <div class="col-md-4"><img src="img/Virizion.jpg" class="pc-only img-responsive center-block"/>
-          <div style="background-color:Green" class="img-div-bottom text-center zero-padding pc-only">Virzion</div><img src="img/virizion.png" class="mobile-only center-block"/>
-          <div style="background-color:Green" class="img-div-onmobile text-center mobile-only">Virzion</div>
+        <div data-bind="virizion" class="col-md-4 clans"><img src="img/Virizion.jpg" class="pc-only img-responsive center-block">
+          <div style="background-color:Green" class="img-div-bottom text-center zero-padding pc-only">Virizion</div><img src="img/virizion.png" class="mobile-only center-block">
+          <div style="background-color:Green" class="img-div-onmobile text-center mobile-only">Virizion</div>
         </div>
       </div>
       <div class="col-md-5 zero-margin zero-padding">
-        <div class="col-md-4"><img src="img/Suicune.jpg" class="pc-only img-responsive center-block"/>
-          <div style="background-color:Blue" class="img-div-bottom text-center zero-padding pc-only">Suicune</div><img src="img/suicune.png" class="mobile-only center-block"/>
+        <div data-bind="suicune" class="col-md-4 clans"><img src="img/Suicune.jpg" class="pc-only img-responsive center-block">
+          <div style="background-color:Blue" class="img-div-bottom text-center zero-padding pc-only">Suicune</div><img src="img/suicune.png" class="mobile-only center-block">
           <div style="background-color:Blue" class="img-div-onmobile text-center mobile-only">Suicune</div>
         </div>
-        <div class="col-md-4"><img src="img/Darkrai.jpg" class="pc-only img-responsive center-block"/>
-          <div style="background-color:Black" class="img-div-bottom text-center zero-padding pc-only">Darkrai</div><img src="img/darkrai.png" class="mobile-only center-block"/>
+        <div data-bind="darkrai" class="col-md-4 clans"><img src="img/Darkrai.jpg" class="pc-only img-responsive center-block">
+          <div style="background-color:Black" class="img-div-bottom text-center zero-padding pc-only">Darkrai</div><img src="img/darkrai.png" class="mobile-only center-block">
           <div style="background-color:Black" class="img-div-onmobile text-center mobile-only">Darkrai</div>
         </div>
-        <div class="col-md-4"><img src="img/Kyurem.jpg" class="pc-only img-responsive center-block"/>
-          <div style="background-color:Beige" class="img-div-bottom text-center zero-padding pc-only">Kyurem</div><img src="img/kyurem.png" class="mobile-only center-block"/>
+        <div data-bind="kyurem" class="col-md-4 clans"><img src="img/Kyurem.jpg" class="pc-only img-responsive center-block">
+          <div style="background-color:Beige" class="img-div-bottom text-center zero-padding pc-only">Kyurem</div><img src="img/kyurem.png" class="mobile-only center-block">
           <div style="background-color:Beige" class="img-div-onmobile text-center mobile-only">Kyurem</div>
         </div>
       </div>
       <div class="col md-1"></div>
     </div>
-    <div style="margin-top:200px" class="container">
+    <div style="margin-top:200px" class="container clan2OG">
       <div class="col-md-1"></div>
       <div class="col-md-2">1</div>
       <div class="col-md-2">2</div>
@@ -59,7 +59,7 @@
     <div class="col-md-8">
       <div style="margin-top: 190px" class="container-fluid">
         <div class="col-md-4">
-          <center><img src="img/mae.fwd.logo.png"/></center>
+          <center><img src="img/mae.fwd.logo.png"></center>
         </div>
         <div class="col-md-8">
           <div class="row">OG Type</div>
@@ -69,14 +69,14 @@
           <div class="row">OG Ranking</div>
         </div>
       </div>
-      <hr/>
+      <hr>
       <div class="container-fluid">
         <div class="panel panel-default">
           <div class="panel-heading">Pokemon description</div>
           <div class="panel-body">Description here!!!</div>
         </div>
       </div>
-      <hr/>
+      <hr>
       <div class="container-fluid">
         <h2>Current results</h2>
         <div class="container-fluid">
@@ -109,5 +109,6 @@
     <script src="js/jquery-1.11.0.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/dropdownlist.js"></script>
+    <script src="js/clans-to-OGs.js"></script>
   </body>
 </html>
