@@ -1,7 +1,4 @@
 $(".clans").on('click', function(e){
-    console.log(".clans is clicked");
-    console.log('data-bind value:' + $(this).attr("data-bind"));
-    
     var to_be_rendered = $(this).attr("data-bind");
     
     var clans = {
@@ -16,12 +13,14 @@ $(".clans").on('click', function(e){
     e.preventDefault();
 
     var matched = clans[to_be_rendered] || [];
-    console.log(matched);
     var renderHtml = $.map(matched, function(matched){
         return '<div class="col-md-2"> <img src="img/' + matched + '.jpg" class="pc-only img-responsive center-block"> \
         <div style="background-color:Blue" class="img-div-bottom text-center zero-padding pc-only">' + matched + '</div><img src="img/'+ matched +'.png" class="mobile-only center-block"> \
         <div style="background-color:Blue" class="img-div-onmobile text-center mobile-only">' + matched + '</div> \
-      </div>'}).join();
-    $(".clan2OG").html('<div class="col-md-1"></div>' + renderHtml + '<div class="col-md-1"></div>'); 
-})
+      </div>'}).join('');
+    $(".clan2OG").html(('<div class="col-md-1"></div>' + renderHtml + '<div class="col-md-1"></div>').replace(',','')); 
 
+    $(".clan2OG").show();
+    $(".clans").hide();
+
+})

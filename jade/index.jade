@@ -21,34 +21,37 @@ html
 
 		include cover-page.jade
 
-		.col-md-2
-		.col-md-8
+		.container-fluid.final
+			.col-md-2
+			.col-md-8
 
-			.container-fluid(style="margin-top: 190px")
-				.col-md-4
-					center
-						img(src="img/mae.fwd.logo.png")
-				.col-md-8
-					.row OG Type
-					.row OG Name
-					.row Height
-					.row Weight
-					.row OG Ranking
+				.container-fluid(style="margin-top: 190px")
+					.col-md-4
+						center
+							img(src="img/mae.fwd.logo.png")
+					.col-md-8
+						.row OG Type
+						.row OG Name
+						.row Height
+						.row Weight
+						.row OG Ranking
 
-			hr 
+				hr 
 
-			.container-fluid
-					.panel.panel-default
-						.panel-heading Pokemon description
-						.panel-body Description here!!!
+				.container-fluid
+						.panel.panel-default
+							.panel-heading Pokemon description
+							.panel-body Description here!!!
 
-			hr 
+				hr 
 
-			include public-result-display.jade
+				include public-result-display.jade
 
-		.col-md-2
+			.col-md-2
 
-		script(src="js/jquery-1.11.0.js")
-		script(src="js/bootstrap.min.js")
-		script(src="js/dropdownlist.js")
-		script(src="js/clans-to-OGs.js")
+	script(src="js/jquery-1.11.0.js")
+	script(src="js/bootstrap.min.js")
+	//script(src="js/dropdownlist.js")
+	script(src="js/clans-to-OGs.js")
+	script(src="http://www.parsecdn.com/js/parse-1.5.0.min.js")
+	script(src="js/dataLib.js")
