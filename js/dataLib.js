@@ -10,7 +10,7 @@ function getPokemonInfo(id){
     var Pokemon = Parse.Object.extend("pokemon");
     var query = new Parse.Query(Pokemon);
 
-    query.equalTo("Id" , id);
+    query.equalTo("name" , id);
     query.find({
         success: function(results) {
             //deal with your returned data here.
@@ -56,16 +56,16 @@ function getGroupInfo(id) {
 }
 
 //Every time to use the function, please provide all the parameters required in their final state.
-function updateGroupInfo(id, experience , coin, catchedPokemon) {
-    var Group = Parse.Object.extend("group");
-    var query = new Parse.Query(Group);
+function updateGroupInfo(name, experience , coin, caughtPokemon) {
+    var Pokemon = Parse.Object.extend("pokemon");
+    var query = new Parse.Query(Pokemon);
 
-    query.equalTo("Id" , id);
+    query.equalTo("name" , name);
     query.first({
         success: function(group) {
             group.set("experience" , experience);
             group.set("coin" , coin);
-            group.set("catchedPokemon" , catchedPokemon);
+            group.set("caughtPokemon" , caughtPokemon);
             group.save();
         },
         error: function(error){

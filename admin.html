@@ -57,22 +57,22 @@
     <div class="container-fluid final">
       <div class="col-md-2"></div>
       <div class="col-md-8">
-        <div style="margin-top: 190px" class="container-fluid">
+        <div class="container-fluid">
           <div class="col-md-4">
             <center><img src="img/mae.fwd.logo.png"></center>
           </div>
           <div class="col-md-8">
-            <div class="row">OG Type</div>
-            <div class="row">OG Name</div>
-            <div class="row">Height</div>
-            <div class="row">Weight</div>
+            <div id="OGtype" class="row">OG Type</div>
+            <div id="OGname" class="row">OG Name</div>
+            <div id="Height" class="row">Height</div>
+            <div id="Weight" class="row">Weight</div>
           </div>
         </div>
         <hr>
         <div class="container-fluid">
           <div class="panel panel-default">
             <div class="panel-heading">Pokemon description</div>
-            <div class="panel-body">Description here!!!</div>
+            <div id="Description" class="panel-body">Description here!!!</div>
           </div>
         </div>
         <hr>
@@ -122,7 +122,7 @@
               </div>
             </div>
           </form><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
-          <h2>Catched pokemon</h2>
+          <h2>Pokemon caught</h2>
           <form class="form-horizontal container-fluid selection-form">
             <div class="form-group selection no-margin">
               <label for="select" class="col-md-1 control-label"><i class="fa fa-lg fa-minus-square"></i></label>
@@ -155,8 +155,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/dropdownlist.js"></script>
     <script src="js/drop_down_widget.js"></script>
-    <script src="js/clans-to-OGs.js"></script>
     <script src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
     <script src="js/dataLib.js"></script>
+    <script src="js/clans-to-OGs.js"></script>
+    <!--script(src="js/trigger.js")-->
   </body>
 </html>
