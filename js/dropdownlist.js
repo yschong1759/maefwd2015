@@ -14,8 +14,15 @@ $('.selection-form').on('change', function(e){
     if ($(clicked).is(".pokeType")) {
       var poke_type=matching[$(clicked).val()] || [];
       var poke_html=$.map(poke_type, function(poke_type){
-            return '<option value="' + poke_type + '">' + poke_type + '</option>'
+            return '<option class="pokemonSel" value="' + poke_type + '">' + poke_type + '</option>'
         }).join('');
       $(clicked).parent().next().children(".pokemonSelect").html(poke_html);
     }  
+
+    str = []
+    $( "select option:selected" ).each(function() {
+      if ($(this).hasClass('pokemonSel')) {
+        str.push($( this ).text());}
+        console.log(str);
+        });
   });

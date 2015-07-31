@@ -17,30 +17,30 @@
       <div class="col-md-1"></div>
       <div class="col-md-5 zero-margin zero-padding">
         <div data-bind="moltres" class="col-md-4 clans"><img src="img/Moltres.jpg" class="pc-only img-responsive center-block">
-          <div style="background-color:Red" class="img-div-bottom text-center zero-padding pc-only">Moltres</div><img src="img/moltres.png" class="mobile-only center-block">
-          <div style="background-color:Red" class="img-div-onmobile text-center mobile-only">Moltres</div>
+          <div style="background-color:#F26COC" class="img-div-bottom text-center zero-padding pc-only">Moltres</div><img src="img/moltres.png" class="mobile-only center-block">
+          <div style="background-color:#F26COC" class="img-div-onmobile text-center mobile-only">Moltres</div>
         </div>
         <div data-bind="lugia" class="col-md-4 clans"> <img src="img/Lugia.jpg" class="pc-only img-responsive center-block">
-          <div style="background-color:Purple" class="img-div-bottom text-center zero-padding pc-only">Lugia</div><img src="img/lugia.png" class="mobile-only center-block">
-          <div style="background-color:Purple" class="img-div-onmobile text-center mobile-only">Lugia</div>
+          <div style="background-color:#9F55A1" class="img-div-bottom text-center zero-padding pc-only">Lugia</div><img src="img/lugia.png" class="mobile-only center-block">
+          <div style="background-color:#9F55A1" class="img-div-onmobile text-center mobile-only">Lugia</div>
         </div>
         <div data-bind="virizion" class="col-md-4 clans"><img src="img/Virizion.jpg" class="pc-only img-responsive center-block">
-          <div style="background-color:Green" class="img-div-bottom text-center zero-padding pc-only">Virizion</div><img src="img/virizion.png" class="mobile-only center-block">
-          <div style="background-color:Green" class="img-div-onmobile text-center mobile-only">Virizion</div>
+          <div style="background-color:#6FDB27" class="img-div-bottom text-center zero-padding pc-only">Virizion</div><img src="img/virizion.png" class="mobile-only center-block">
+          <div style="background-color:#6FDB27" class="img-div-onmobile text-center mobile-only">Virizion</div>
         </div>
       </div>
       <div class="col-md-5 zero-margin zero-padding">
         <div data-bind="suicune" class="col-md-4 clans"><img src="img/Suicune.jpg" class="pc-only img-responsive center-block">
-          <div style="background-color:Blue" class="img-div-bottom text-center zero-padding pc-only">Suicune</div><img src="img/suicune.png" class="mobile-only center-block">
-          <div style="background-color:Blue" class="img-div-onmobile text-center mobile-only">Suicune</div>
+          <div style="background-color:#15AFD1" class="img-div-bottom text-center zero-padding pc-only">Suicune</div><img src="img/suicune.png" class="mobile-only center-block">
+          <div style="background-color:#15AFD1" class="img-div-onmobile text-center mobile-only">Suicune</div>
         </div>
         <div data-bind="darkrai" class="col-md-4 clans"><img src="img/Darkrai.jpg" class="pc-only img-responsive center-block">
-          <div style="background-color:Black" class="img-div-bottom text-center zero-padding pc-only">Darkrai</div><img src="img/darkrai.png" class="mobile-only center-block">
-          <div style="background-color:Black" class="img-div-onmobile text-center mobile-only">Darkrai</div>
+          <div style="background-color:#333131" class="img-div-bottom text-center zero-padding pc-only">Darkrai</div><img src="img/darkrai.png" class="mobile-only center-block">
+          <div style="background-color:#333131" class="img-div-onmobile text-center mobile-only">Darkrai</div>
         </div>
         <div data-bind="kyurem" class="col-md-4 clans"><img src="img/Kyurem.jpg" class="pc-only img-responsive center-block">
-          <div style="background-color:Beige" class="img-div-bottom text-center zero-padding pc-only">Kyurem</div><img src="img/kyurem.png" class="mobile-only center-block">
-          <div style="background-color:Beige" class="img-div-onmobile text-center mobile-only">Kyurem</div>
+          <div style="background-color:#FFFFFF" class="img-div-bottom text-center zero-padding pc-only">Kyurem</div><img src="img/kyurem.png" class="mobile-only center-block">
+          <div style="background-color:#FFFFFF" class="img-div-onmobile text-center mobile-only">Kyurem</div>
         </div>
       </div>
       <div class="col md-1"></div>
@@ -80,7 +80,7 @@
           <h2>Input the scores</h2>
           <form class="form-horizontal">
             <div class="form-group">
-              <label for="expEntry" class="col-sm-3 control-label">Experience Gained</label>
+              <label for="experience" class="col-sm-3 control-label">Experience Gained</label>
               <div class="col-sm-9">
                 <div class="form-inline">
                   <div data-toggle="buttons" style="margin-right:10px" class="btn-group">
@@ -96,12 +96,12 @@
                       	$('#option1').radio('reset');} )
                     </script>
                   </div>
-                  <input type="number" id="expEntry" class="form-control">
+                  <input type="number" id="experience" class="form-control">
                 </div>
               </div>
             </div>
             <div class="form-group">
-              <label for="coinEntry" class="col-sm-3 control-label">Pokécoin</label>
+              <label for="coin" class="col-sm-3 control-label">Pokécoin</label>
               <div class="col-sm-9">
                 <div class="form-inline">
                   <div data-toggle="buttons" style="margin-right:10px" class="btn-group">
@@ -117,7 +117,7 @@
                       	$('#option1').radio('reset');} )
                     </script>
                   </div>
-                  <input type="number" id="coinEntry" class="form-control">
+                  <input type="number" id="coin" class="form-control">
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@
                 </select>
               </div>
               <div class="col-md-5 no-padding">
-                <select class="col-sm-3 form-control pokemonSelect"></select>
+                <select class="col-sm-3 form-control pokemonSelect">#.pokemonSelect</select>
               </div>
               <div class="col-md-1"></div>
             </div>
@@ -147,7 +147,7 @@
               <div class="col-md-1 btn btn-primary"><i class="fa fa-lg fa-plus-square">  Add</i></div>
             </div>
           </form>
-          <button class="btn btn-default">Submit</button>
+          <button id="submitAll" class="btn btn-default">Submit</button>
         </div>
       </div>
       <div class="col-md-2"></div>
@@ -158,6 +158,6 @@
     <script src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
     <script src="js/dataLib.js"></script>
     <script src="js/clans-to-OGs.js"></script>
-    <!--script(src="js/trigger.js")-->
+    <script src="js/trigger.js"></script>
   </body>
 </html>

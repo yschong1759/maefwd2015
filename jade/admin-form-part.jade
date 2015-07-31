@@ -3,7 +3,7 @@
 
 	form.form-horizontal
 		.form-group
-			label.col-sm-3.control-label(for="expEntry") Experience Gained
+			label.col-sm-3.control-label(for="experience") Experience Gained
 			.col-sm-9
 				.form-inline
 					.btn-group(data-toggle="buttons", style="margin-right:10px")
@@ -17,10 +17,10 @@
 							$('#option2').on('click', function () {
 								$('#option2').radio('active');
 								$('#option1').radio('reset');} )
-					input.form-control(type="number", id="expEntry")
+					input.form-control(type="number", id="experience")
 
 		.form-group
-			label.col-sm-3.control-label(for="coinEntry") Pokécoin
+			label.col-sm-3.control-label(for="coin") Pokécoin
 			.col-sm-9
 				.form-inline
 					.btn-group(data-toggle="buttons", style="margin-right:10px")
@@ -34,9 +34,9 @@
 							$('#option2').on('click', function () {
 								$('#option2').radio('active');
 								$('#option1').radio('reset');} )
-					input.form-control(type="number", id="coinEntry")
+					input.form-control(type="number", id="coin")
 
 
 	include drop_down_widget.jade
 
-	button.btn.btn-default Submit
+	button.btn.btn-default#submitAll Submit

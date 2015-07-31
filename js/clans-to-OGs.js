@@ -25,9 +25,8 @@ $(".clans").on('click', function(e){
     $(".clans").hide();
 
     console.log(document.getElementsByClassName('groups'));
-    
+
     $(".groups").click(function(e){
-        console.log('here');
         $('.clan2OG').hide();
         $('.final').show();
 
@@ -38,7 +37,7 @@ $(".clans").on('click', function(e){
         query.find({
             success: function(results) {
                 //deal with your returned data here.
-                console.log(results[0]["attributes"]);
+                //console.log(results[0]["attributes"]);
 
                 var result = results[0]["attributes"];
                 $('#OGtype').html(result["type"]);
