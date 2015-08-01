@@ -1,3 +1,4 @@
+// triggered when submission success
 function submitSuccess() {
     console.log('here');
     $('#myForm').hide();
@@ -5,6 +6,7 @@ function submitSuccess() {
 
 }
 
+// triggered when submission fail
 function submitFail() {
     console.log('here');
     $('#myForm').hide();
@@ -12,6 +14,14 @@ function submitFail() {
 
 }
 
+function submitAgain() {
+    console.log('here');
+    $('#myForm').show();
+    $('#error').hide();
+
+}
+
+//triggered to submit all inputted data
 $('#submitAll').on('click', function(){
     var Pokemon = Parse.Object.extend("pokemon");
     var query = new Parse.Query(Pokemon);
@@ -25,12 +35,22 @@ $('#submitAll').on('click', function(){
         console.log(caughtPokemon);
     });
 
+
     query.equalTo("name" , $('#OGname').text());
     query.first({
         success: function(query) {
-            query.set("experience" , query.get('experience') + parseInt($('#experience').val()));
-            query.set("coin" , query.get('coin') + parseInt($('#coin').val()));
+            var experience = $('#experience').val();
+            var coin = $('#coin').val();
+            if (experience == '') {
+                experience = 0;
+            };
+            if (coin == '') {
+                coin = 0;
+            }; 
+            query.set("experience" , query.get('experience') + parseInt(experience));
+            query.set("coin" , query.get('coin') + parseInt(coin));
             query.set("caughtPokemon" , query.get('caughtPokemon').concat(caughtPokemon));
+            //count for number of caught pokemon
             query.set("numberCaught" , query.get('caughtPokemon').concat(caughtPokemon).length);
             query.save();
             console.log('success');

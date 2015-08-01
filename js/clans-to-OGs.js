@@ -45,6 +45,8 @@ $(".clans").on('click', function(e){
                 $('#Height').html(result["height"]);
                 $('#Weight').html(result["weight"]);
                 $('#Description').html(result["description"]);
+                $('#ExperienceP').html(result["experience"]);
+                $('#CoinP').html(result["coin"]);
 
             },
             error: function(error) {
