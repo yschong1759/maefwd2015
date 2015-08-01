@@ -14,12 +14,15 @@ function submitFail() {
 
 }
 
+// triggered when click submit again
 function submitAgain() {
     console.log('here');
     $('#myForm').show();
     $('#error').hide();
+    $('#submitSuccess').hide();
 
 }
+
 
 //triggered to submit all inputted data
 $('#submitAll').on('click', function(){
@@ -32,7 +35,7 @@ $('#submitAll').on('click', function(){
         if ($(this).hasClass('pokemonSel')) {
             caughtPokemon.push($( this ).text());
         }
-        console.log(caughtPokemon);
+        //console.log(caughtPokemon);
     });
 
 
@@ -51,10 +54,9 @@ $('#submitAll').on('click', function(){
             query.set("coin" , query.get('coin') + parseInt(coin));
             query.set("caughtPokemon" , query.get('caughtPokemon').concat(caughtPokemon));
             //count for number of caught pokemon
-            query.set("numberCaught" , query.get('caughtPokemon').concat(caughtPokemon).length);
+            query.set("numberCaught" , query.get('caughtPokemon').length);
             query.save();
-            console.log('success');
-            console.log('triggering jumping container');
+            //console.log('success');
             submitSuccess();
         },
         error: function(error){

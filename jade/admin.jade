@@ -1,58 +1,33 @@
 doctype html
 
 html
-	head
-		meta(charset="utf-8")
-		meta(http-equiv="X-UA-Compatible",content="chrome=1")
-		meta(name="viewport",content="width=device-width,initial-scale=1")
-		link(href="css/simplex_bootstrap.css", rel="stylesheet")
-		script(src="js/jquery-1.11.0.js")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible",content="chrome=1")
+    meta(name="viewport",content="width=device-width,initial-scale=1")
+    link(href="css/simplex_bootstrap.css", rel="stylesheet")
+    script(src="js/jquery-1.11.0.js")
+    
+    title MAE FWD 2015 | Admin
 
-		title MAE FWD 2015 | Admin
+  body
 
-	body
+    .navbar-default.navbar-fixed-top
+      center
+        a(href="admin.html", style="text-decoration:none")
+          img(src="img/mae.fwd.logo.png", style="width: 15%")
+          p(style="font-size:30px") FWD 2015 Admin
 
-		.navbar-default.navbar-fixed-top
-			center
-				a(href="admin.html", style="text-decoration:none")
-					img(src="img/mae.fwd.logo.png", style="width: 15%")
-					p(style="font-size:30px") FWD 2015 Admin
+    include cover-page.jade
 
-		include cover-page.jade
+    include admin-section.jade
 
-		.container-fluid.final
-			.col-md-2
-			.col-md-8
+    include footer.jade
 
-				.container-fluid()
-					.col-md-4
-						center
-							img(src="img/mae.fwd.logo.png")
-					.col-md-8
-						.row#OGtype OG Type
-						.row#OGname OG Name
-						.row#Height Height
-						.row#Weight Weight
-
-				hr 
-
-				.container-fluid
-					.panel.panel-default
-						.panel-heading Pokemon description
-						.panel-body#Description Description here!!!
-
-				hr 
-
-				include admin-form-part.jade
-
-			.col-md-2
-
-		include footer.jade
-
-		script(src="js/bootstrap.min.js")
-		script(src="js/dropdownlist.js")
-		script(src="js/drop_down_widget.js")
-		script(src="http://www.parsecdn.com/js/parse-1.5.0.min.js")
-		script(src="js/dataLib.js")
-		script(src="js/clans-to-OGs.js")
-		script(src="js/trigger.js")
+    script(src="js/bootstrap.min.js")
+    script(src="http://www.parsecdn.com/js/parse-1.5.0.min.js")
+    script(src="js/dataLib.js")
+    script(src="js/dropdownlist.js")
+    script(src="js/drop_down_widget.js")
+    script(src="js/clans-to-OGs.js")
+    script(src="js/trigger.js")

@@ -13,7 +13,7 @@
       <center><a href="admin.html" style="text-decoration:none"><img src="img/mae.fwd.logo.png" style="width: 15%">
           <p style="font-size:30px">FWD 2015 Admin</p></a></center>
     </div>
-    <div style="margin-top:200px" class="container">
+    <div class="container better">
       <div class="col-md-1"></div>
       <div class="col-md-5 zero-margin zero-padding">
         <div data-bind="moltres" class="col-md-4 clans"><img src="img/Moltres.jpg" class="pc-only img-responsive center-block">
@@ -92,8 +92,8 @@
                     </label>
                     <script>
                       $('#option2').on('click', function () {
-                      	$('#option2').radio('active');
-                      	$('#option1').radio('reset');} )
+                        $('#option2').radio('active');
+                        $('#option1').radio('reset');} )
                     </script>
                   </div>
                   <input type="number" id="experience" class="form-control">
@@ -113,15 +113,16 @@
                     </label>
                     <script>
                       $('#option2').on('click', function () {
-                      	$('#option2').radio('active');
-                      	$('#option1').radio('reset');} )
+                        $('#option2').radio('active');
+                        $('#option1').radio('reset');} )
                     </script>
                   </div>
                   <input type="number" id="coin" class="form-control">
                 </div>
               </div>
             </div>
-          </form><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+          </form>
+          <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
           <h2>Pokemon caught</h2>
           <form class="form-horizontal container-fluid selection-form">
             <div class="form-group selection no-margin">
@@ -144,14 +145,15 @@
             <div class="add-new">
               <div class="col-md-5"></div>
               <div class="col-md-5"></div>
-              <div class="col-md-1 btn btn-primary"><i class="fa fa-lg fa-plus-square">  Add</i></div>
+              <div class="col-md-1 btn btn-primary"><i class="fa fa-lg fa-plus-square"> Add</i></div>
             </div>
           </form>
+          <hr>
           <button id="submitAll" class="btn btn-default">Submit</button>
         </div>
         <div id="submitSuccess" class="container-fluid hiding">
-          <h2>Submit successfully!</h2>
-          <button onclick="submitAgain()" class="btn btn-primary">Submit again?</button>
+          <h2 class="text-center">Submit successfully!</h2>
+          <button onclick="submitAgain()" class="btn btn-primary center-block">Submit again?</button>
         </div>
         <div id="error" class="container-fluid hiding">
           <h2>Not successfully</h2>
@@ -160,14 +162,15 @@
       </div>
       <div class="col-md-2"></div>
     </div>
-    <div class="container fillx">
-      <button class="btn btn-default">Back</button>
+    <hr>
+    <div class="container fillx footer">
+      <button onclick="backButton()" class="btn btn-default center-block">Back</button>
     </div>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/dropdownlist.js"></script>
-    <script src="js/drop_down_widget.js"></script>
     <script src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
     <script src="js/dataLib.js"></script>
+    <script src="js/dropdownlist.js"></script>
+    <script src="js/drop_down_widget.js"></script>
     <script src="js/clans-to-OGs.js"></script>
     <script src="js/trigger.js"></script>
   </body>

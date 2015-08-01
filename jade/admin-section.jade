@@ -1,0 +1,77 @@
+.container-fluid.final
+  .col-md-2
+  .col-md-8
+    .container-fluid()
+      .col-md-4
+        center
+          img(src="img/mae.fwd.logo.png")
+      .col-md-8
+        .row#OGtype OG Type
+        .row#OGname OG Name
+        .row#Height Height
+        .row#Weight Weight
+
+    hr 
+
+    .container-fluid
+      .panel.panel-default
+        .panel-heading Pokemon description
+        .panel-body#Description Description here!!!
+
+    hr
+
+    .container-fluid#myForm
+      h2 Input the scores
+
+      form.form-horizontal
+        .form-group
+          label.col-sm-3.control-label(for="experience") Experience Gained
+          .col-sm-9
+            .form-inline
+              .btn-group(data-toggle="buttons", style="margin-right:10px")
+                label.btn.btn-info.active Add
+                  input(type="radio", name="expAddorMinus", id="option1" autocomplete="off", value="Add", checked)
+                  img(src="img/glyphicons-circle-plus.png")
+                label.btn.btn-primary Minus
+                  input(type="radio", name="expAddorMinus", id="option2" autocomplete="off", value="Minus")
+                  img(src="img/glyphicons-circle-minus.png")
+                script.
+                  $('#option2').on('click', function () {
+                    $('#option2').radio('active');
+                    $('#option1').radio('reset');} )
+              input.form-control(type="number", id="experience")
+
+        .form-group
+          label.col-sm-3.control-label(for="coin") Pokécoin
+          .col-sm-9
+            .form-inline
+              .btn-group(data-toggle="buttons", style="margin-right:10px")
+                label.btn.btn-info.active Add
+                  input(type="radio", name="expAddorMinus", id="option1" autocomplete="off", value="Add", checked)
+                  img(src="img/glyphicons-circle-plus.png")
+                label.btn.btn-primary Minus
+                  input(type="radio", name="expAddorMinus", id="option2" autocomplete="off", value="Minus")
+                  img(src="img/glyphicons-circle-minus.png")
+                script.
+                  $('#option2').on('click', function () {
+                    $('#option2').radio('active');
+                    $('#option1').radio('reset');} )
+              input.form-control(type="number", id="coin")
+
+      include drop_down_widget.jade
+
+      button.btn.btn-default#submitAll Submit
+
+    .container-fluid.hiding#submitSuccess
+        h2.text-center Submit successfully!
+        button.btn.btn-primary.center-block(onclick='submitAgain()') Submit again?
+
+    .container-fluid.hiding#error
+        h2 Not successfully
+        h2 Click here to try again
+
+  .col-md-2
+
+
+
+

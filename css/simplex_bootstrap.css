@@ -6955,7 +6955,7 @@ label {
 }
 
 .zero-margin {
-  margin:0;
+  margin:0px;
 }
 .zero-padding {
   padding: 0px;
@@ -6967,8 +6967,8 @@ label {
 
 @media (min-width:992px){
   .pc-only{display:inherit}
-  .mobile-only{display:none
-}}
+  .mobile-only{display:none}
+}
 
 .img-div-bottom {
   width: 85%;
@@ -6996,4 +6996,16 @@ label {
 
 .hiding {
   display: none;
+}
+
+.footer {
+  background:rgba(255,255,255,0.4);
+}
+
+@media (max-width:992px){
+  .better{margin-top: 100px;}
+}
+
+@media (min-width:992px){
+  .better{margin-top: 200px;}
 }
