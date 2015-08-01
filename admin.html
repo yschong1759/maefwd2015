@@ -76,7 +76,7 @@
           </div>
         </div>
         <hr>
-        <div class="container-fluid">
+        <div id="myForm" class="container-fluid">
           <h2>Input the scores</h2>
           <form class="form-horizontal">
             <div class="form-group">
@@ -137,7 +137,7 @@
                 </select>
               </div>
               <div class="col-md-5 no-padding">
-                <select class="col-sm-3 form-control pokemonSelect">#.pokemonSelect</select>
+                <select class="col-sm-3 form-control pokemonSelect"></select>
               </div>
               <div class="col-md-1"></div>
             </div>
@@ -148,6 +148,14 @@
             </div>
           </form>
           <button id="submitAll" class="btn btn-default">Submit</button>
+        </div>
+        <div id="submitSuccess" class="container-fluid hiding">
+          <h2>Submit successfully!</h2>
+          <button click class="btn btn-primary">Submit again?</button>
+        </div>
+        <div id="error" class="container-fluid hiding">
+          <h2>Not successfully</h2>
+          <h2>Click here to try again</h2>
         </div>
       </div>
       <div class="col-md-2"></div>

@@ -6993,3 +6993,7 @@ label {
 .final {
   display: none;
 }
+
+.hiding {
+  display: none;
+}

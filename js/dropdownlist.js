@@ -19,10 +19,4 @@ $('.selection-form').on('change', function(e){
       $(clicked).parent().next().children(".pokemonSelect").html(poke_html);
     }  
 
-    str = []
-    $( "select option:selected" ).each(function() {
-      if ($(this).hasClass('pokemonSel')) {
-        str.push($( this ).text());}
-        console.log(str);
-        });
   });
