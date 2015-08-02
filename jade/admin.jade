@@ -14,9 +14,11 @@ html
 
     .navbar-default.navbar-fixed-top
       center
-        a(href="admin.html", style="text-decoration:none")
-          img(src="img/mae.fwd.logo.png", style="width: 15%")
-          p(style="font-size:30px") FWD 2015 Admin
+        //a(href="admin.html", style="text-decoration:none")
+        img(src="img/mae.fwd.logo.png", style="width: 15%")
+        p(style="font-size:30px") FWD 2015 Admin
+
+    include admin-login.jade
 
     include cover-page.jade
 
@@ -31,3 +33,4 @@ html
     script(src="js/drop_down_widget.js")
     script(src="js/clans-to-OGs.js")
     script(src="js/trigger.js")
+    script(src="js/admin-verify.js")

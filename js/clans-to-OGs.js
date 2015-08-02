@@ -11,6 +11,14 @@ function backButton(){
     };
 }
 
+function toClansButton(){
+    $('.clans').show();
+    $('.clan2OG').hide();
+    $('.final').hide();
+    window.scrollTo(0,0);
+    };
+
+
 //function to count ranking for each group
 function rankingCount(group) {
     var Pokemon = Parse.Object.extend("pokemon");

@@ -10,15 +10,33 @@
   </head>
   <body>
     <div class="navbar-default navbar-fixed-top">
-      <center><a href="admin.html" style="text-decoration:none"><img src="img/mae.fwd.logo.png" style="width: 15%">
-          <p style="font-size:30px">FWD 2015 Admin</p></a></center>
+      <center>
+        <!--a(href="admin.html", style="text-decoration:none")--><img src="img/mae.fwd.logo.png" style="width: 15%">
+        <p style="font-size:30px">FWD 2015 Admin</p>
+      </center>
     </div>
-    <div class="container better">
+    <div id="loginPage" class="container zero-padding better login">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <form>
+          <div class="form-group">
+            <input id="loginUser" type="text" placeholder="Username" class="form-control">
+          </div>
+          <div class="form-group">
+            <input id="loginPassword" type="password" placeholder="Password" class="form-control">
+          </div>
+          <button id="submitLogin" type="button" class="center-block btn btn-default">Submit</button>
+          <p id="notSuccess" class="hiding">Login unsucessfully! Check your username and password</p>
+        </form>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    <div id="firstpage" class="container better hiding">
       <div class="col-md-1"></div>
       <div class="col-md-5 zero-margin zero-padding">
         <div data-bind="moltres" class="col-md-4 clans"><img src="img/Moltres.jpg" class="pc-only img-responsive center-block">
-          <div style="background-color:#F26COC" class="img-div-bottom text-center zero-padding pc-only">Moltres</div><img src="img/moltres.png" class="mobile-only center-block">
-          <div style="background-color:#F26COC" class="img-div-onmobile text-center mobile-only">Moltres</div>
+          <div style="background-color:#FF0000" class="img-div-bottom text-center zero-padding pc-only">Moltres</div><img src="img/moltres.png" class="mobile-only center-block">
+          <div style="background-color:#FF0000" class="img-div-onmobile text-center mobile-only">Moltres</div>
         </div>
         <div data-bind="lugia" class="col-md-4 clans"> <img src="img/Lugia.jpg" class="pc-only img-responsive center-block">
           <div style="background-color:#9F55A1" class="img-div-bottom text-center zero-padding pc-only">Lugia</div><img src="img/lugia.png" class="mobile-only center-block">
@@ -164,7 +182,8 @@
     </div>
     <hr>
     <div class="container fillx footer">
-      <button onclick="backButton()" class="btn btn-default center-block">Back</button>
+      <button style="display: inline-block" onclick="toClansButton()" class="btn btn-default center-block">To Clans</button>
+      <button style="display: inline-block" onclick="backButton()" class="btn btn-default center-block">Back</button>
     </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
@@ -173,5 +192,6 @@
     <script src="js/drop_down_widget.js"></script>
     <script src="js/clans-to-OGs.js"></script>
     <script src="js/trigger.js"></script>
+    <script src="js/admin-verify.js"></script>
   </body>
 </html>
