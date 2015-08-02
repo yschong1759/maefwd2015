@@ -88,6 +88,9 @@ $(".clans").on('click', function(e){
     var bg_color = color[to_be_rendered];
     
     var renderHtml = $.map(matched, function(matched){
+        if (bg_color == '#FFFFFF') {
+            bg_color = bg_color + '; color: #000000';
+        }
         return '<div class="groups col-md-2" data-name="' + matched + '"> <img src="img/' + matched + '.jpg" class="pc-only img-responsive center-block"> \
         <div style="background-color:'+ bg_color +'" class="img-div-bottom text-center zero-padding pc-only">' + matched + '</div><img src="img/'+ matched +'.png" class="mobile-only center-block"> \
         <div style="background-color:'+ bg_color +'" class="img-div-onmobile text-center mobile-only">' + matched + '</div> \

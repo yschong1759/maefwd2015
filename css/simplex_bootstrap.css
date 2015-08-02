@@ -6974,14 +6974,14 @@ label {
   width: 85%;
   position:absolute; 
   top: 85%; 
-  color: #FFD700; 
+  color: #FFFFFF; 
   font-size: 30px;
   border-radius: 5px;
   border: 1px solid black;
 }
 
 .img-div-onmobile{
-  color:#FFD700; 
+  color:#FFFFFF; 
   margin: 10px;
   font-size: 20px;
   border-radius: 5px;
@@ -7014,7 +7014,7 @@ label {
 
 .type {
   border-radius: 5px;
-  color: #FFD700;
+  color: #FFFFFF;
   font-size: 20px;
   border-bottom: 1px black solid;
 }
@@ -7049,5 +7049,5 @@ label {
 }
 
 @media (min-width:992px){
-  .imgPC{height: 150px;}
+  .imgPC{height: 130px;}
 }

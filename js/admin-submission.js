@@ -29,10 +29,10 @@ $('#experience').on('change', function(){
         $('#checkExp').html('Positive number');
     } else if (parseInt($(this).val()) < 0) {
         $('#checkExp').removeClass('label-info label-default').addClass('label-primary');
-        $('#checkExp').html('Negative experience is entered');
+        $('#checkExp').html('Negative number is entered');
     } else {
         $('#checkExp').removeClass('label-info label-primary').addClass('label-default');
-        $('#checkExp').html('Please enter experience unless you want it to zero.');
+        $('#checkExp').html('Zero');
     }
 })
 
@@ -43,10 +43,10 @@ $('#coin').on('change', function(){
         $('#checkCoin').html('Positive number');
     } else if (parseInt($(this).val()) < 0) {
         $('#checkCoin').removeClass('label-default label-info').addClass('label-primary');
-        $('#checkCoin').html('Negative experience is entered');
+        $('#checkCoin').html('Negative number is entered');
     } else {
         $('#checkCoin').removeClass('label-info label-primary').addClass('label-default');
-        $('#checkCoin').html('Please enter coin unless you want it to zero.');
+        $('#checkCoin').html('Zero');
     }
 })
 
