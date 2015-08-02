@@ -6974,13 +6974,13 @@ label {
   width: 85%;
   position:absolute; 
   top: 85%; 
-  color: Gold; 
+  color: #FFD700; 
   font-size: 30px;
   border-radius: 5px;
 }
 
 .img-div-onmobile{
-  color:Gold; 
+  color:#FFD700; 
   margin: 10px;
   font-size: 20px;
   border-radius: 5px;
