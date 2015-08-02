@@ -121,7 +121,7 @@ $(".clans").on('click', function(e){
                 var result = results[0]["attributes"];
                 $('#OGimg').html('<center><img src="img/' + result["name"] + '.png"></center>');
                 $('#OGtype').html('<div id="OGtype" class="text-center type"' + 'style="background-color:' + bg_color + '"' +'>'+ result["type"] + '</div>');
-                $('#OGname').html(result["name"]);
+                $('#OGname').html(result["hashNumber"] + '   ' + result["name"]);
                 $('#Height').html('Height : ' + result["height"]);
                 $('#Weight').html('Weight : ' + result["weight"]);
                 $('#Description').html(result["description"]);
