@@ -1,3 +1,8 @@
+//initialize for parse
+Parse.initialize("fxS2moYN7SBJwg02HO9kMFMLFXzFIBs8EaS9s7vf" , "Ci7HRvQesSsQroPRJnNea7ofhuPjiwhof39kdp9n");
+
+
+//function to retrieve and verify
 function verify(username, password) {
     var User = Parse.Object.extend("user");
     var query = new Parse.Query(User);
@@ -32,7 +37,7 @@ function verify(username, password) {
     });
 }
 
+//triggered when click login button
 $('#submitLogin').on('click', function(){
-
   verify($('#loginUser').val(), $('#loginPassword').val());
 })

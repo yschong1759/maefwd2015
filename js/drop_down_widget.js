@@ -1,3 +1,4 @@
+// admin part drowpdown widget add button
 $(document).ready(function() {
   $('.add-new').click(function () {
     $(this).before('<div class="form-group selection no-margin">\
@@ -19,6 +20,7 @@ $(document).ready(function() {
         </div>');
   })
 
+  // for dropdown widget remove button
   $('.selection-form').on('click', function(e){
     e.stopPropagation();
     e.preventDefault();

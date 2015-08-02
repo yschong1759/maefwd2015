@@ -1,3 +1,5 @@
+Parse.initialize("fxS2moYN7SBJwg02HO9kMFMLFXzFIBs8EaS9s7vf" , "Ci7HRvQesSsQroPRJnNea7ofhuPjiwhof39kdp9n");
+
 //triggered when click back button
 function backButton(){
     if (!($('.clan2OG').is(':hidden'))) {
@@ -17,7 +19,6 @@ function toClansButton(){
     $('.final').hide();
     window.scrollTo(0,0);
     };
-
 
 //function to count ranking for each group
 function rankingCount(group) {
@@ -40,9 +41,7 @@ function rankingCount(group) {
                 dict[target] = object.get('name') ;
               }
             };
-
             //console.log(dict);
-
             var rankingList = [];
 
             var temp1 = Object.keys(dict);
@@ -95,7 +94,7 @@ $(".clans").on('click', function(e){
     //do not delete the line below
     document.getElementsByClassName('groups');
 
-    //collect and submit data
+    //retrieve group details from database
     $(".groups").click(function(e){
         $('.clan2OG').hide();
         $('.final').show();
@@ -112,16 +111,24 @@ $(".clans").on('click', function(e){
                 //console.log(results[0]["attributes"]);
 
                 var result = results[0]["attributes"];
+                $('#OGimg').html('<center><img src="img/' + result["name"] + '.png"></center>');
                 $('#OGtype').html(result["type"]);
                 $('#OGname').html(result["name"]);
                 $('#Height').html(result["height"]);
                 $('#Weight').html(result["weight"]);
                 $('#Description').html(result["description"]);
-                //P for public page
+                //Below are items for public page
                 $('#ExperienceP').html(result["experience"]);
                 $('#CoinP').html(result["coin"]);
                 var temp = rankingCount(result["name"]);
                 $('#Ranking').html(temp);
+                // to display img for caught pokemon
+                var temp = result["caughtPokemon"];
+                var prepare = '';
+                for(var i=0; i<temp.length; i++) {
+                    var poke = temp[i];
+                    var prepare.join();
+                }
 
             },
             error: function(error) {

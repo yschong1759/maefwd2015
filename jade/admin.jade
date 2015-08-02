@@ -22,15 +22,17 @@ html
 
     include cover-page.jade
 
+    script.
+        $('.first').hide();
+
     include admin-section.jade
 
     include footer.jade
 
     script(src="js/bootstrap.min.js")
     script(src="http://www.parsecdn.com/js/parse-1.5.0.min.js")
-    script(src="js/dataLib.js")
+    script(src="js/admin-verify.js")
+    script(src="js/clans-to-OGs.js")
     script(src="js/dropdownlist.js")
     script(src="js/drop_down_widget.js")
-    script(src="js/clans-to-OGs.js")
-    script(src="js/trigger.js")
-    script(src="js/admin-verify.js")
+    script(src="js/admin-submission.js")

@@ -14,7 +14,7 @@
       <center><a href="index.html" style="text-decoration:none"><img src="img/mae.fwd.logo.png" style="width: 15%">
           <p style="font-size:30px">MAE FWD 2015 Showdown</p></a></center>
     </div>
-    <div class="container better">
+    <div id="firstpage" class="container better first">
       <div class="col-md-1"></div>
       <div class="col-md-5 zero-margin zero-padding">
         <div data-bind="moltres" class="col-md-4 clans"><img src="img/Moltres.jpg" class="pc-only img-responsive center-block">
@@ -59,7 +59,7 @@
       <div class="col-md-2"></div>
       <div class="col-md-8">
         <div class="container-fluid">
-          <div class="col-md-4">
+          <div id="OGimg" class="col-md-4">
             <center><img src="img/mae.fwd.logo.png"></center>
           </div>
           <div class="col-md-8">
@@ -101,7 +101,14 @@
               <div class="panel-heading">
                 <div class="panel-title">Pokemon Caught</div>
               </div>
-              <div class="panel-body">Pictures showing</div>
+              <div id="caught" class="panel-body">
+                <div class="col-sm-3 col-xs-3 zero-padding zero padding"><img src="img/Alakazam.png" class="img-thumbnail"></div>
+                <div class="col-sm-3 col-xs-3 zero-padding zero padding"><img src="img/Alakazam.png" class="img-thumbnail"></div>
+                <div class="col-sm-3 col-xs-3 zero-padding zero padding"><img src="img/Alakazam.png" class="img-thumbnail"></div>
+                <div class="col-sm-3 col-xs-3 zero-padding zero padding"><img src="img/Alakazam.png" class="img-thumbnail"></div>
+                <div class="col-sm-3 col-xs-3 zero-padding zero padding"><img src="img/Alakazam.png" class="img-thumbnail"></div>
+                <div class="col-sm-3 col-xs-3 zero-padding zero padding"><img src="img/Alakazam.png" class="img-thumbnail"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -110,12 +117,12 @@
     </div>
     <hr>
     <div class="container fillx footer">
-      <button onclick="backButton()" class="btn btn-default center-block">Back</button>
+      <button style="display: inline-block" onclick="toClansButton()" class="btn btn-default center-block">To Clans</button>
+      <button style="display: inline-block" onclick="backButton()" class="btn btn-default center-block">Back</button>
     </div>
   </body>
   <script src="js/jquery-1.11.0.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
   <script src="js/clans-to-OGs.js"></script>
-  <script src="js/dataLib.js"></script>
 </html>

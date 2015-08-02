@@ -1,3 +1,4 @@
+// for dynamic dropdown list
 $('.selection-form').on('change', function(e){
     var matching = {
         'Fire': ['Charmander', 'Charmeleon', 'Charizard'],
@@ -10,6 +11,8 @@ $('.selection-form').on('change', function(e){
 
     e.stopPropagation();
     e.preventDefault();
+
+    // compile html
     var clicked = e.target;
     if ($(clicked).is(".pokeType")) {
       var poke_type=matching[$(clicked).val()] || [];
