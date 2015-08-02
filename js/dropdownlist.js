@@ -5,7 +5,7 @@ $('.selection-form').on('change', function(e){
         'Water': ['Squirtle', 'Wartortle', 'Blastoise'],
         'Grass': ['Bulbasaur', 'Ivysaur', 'Venusaur'],
         'Ice': ['Spheal','Sealeo', 'Walrein'],
-        'Physics': ['Ralts', 'Kirlia', 'Gardevoir'],
+        'Psychic': ['Ralts', 'Kirlia', 'Gardevoir'],
         'Dark': ['Deino', 'Zweilous', 'Hydreigon']
     }
 

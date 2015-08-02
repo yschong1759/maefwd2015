@@ -131,6 +131,22 @@ $(".clans").on('click', function(e){
 
                     // to display img for caught pokemon
                     var temp = result["caughtPokemon"];
+                    var temp_dict = {};
+                    for (var i=0; i<temp.length; i++) {
+                          if (temp[i] in temp_dict) {
+                            temp_dict[temp[i]] = temp_dict[temp[i]] + 1;
+                          } else {
+                            temp_dict[temp[i]] = 1 ;
+                          }
+                        };
+                     
+                    var reference = ['Charmander', 'Charmeleon', 'Charizard','Squirtle', 'Wartortle', 'Blastoise','Bulbasaur', 'Ivysaur', 'Venusaur','Spheal','Sealeo', 'Walrein','Ralts', 'Kirlia', 'Gardevoir','Deino', 'Zweilous', 'Hydreigon'];
+                    var temp = [];
+                    for (var i=0; i<reference.length; i++) {
+                        for(var j=0; j<temp_dict[reference[i]]; j++) {
+                            temp.push(reference[i]);
+                        }
+                    };
                     var prepare = '';
                     for(var i=0; i<temp.length; i++) {
                         var poke = temp[i];
@@ -138,13 +154,13 @@ $(".clans").on('click', function(e){
                         prepare = prepare.concat('<div class="col-sm-3 col-xs-3 zero-padding zero padding"><img src="img/'+ poke +'.png" class="img-thumbnail"></div>');        
                         //console.log(prepare);
                     }
-
+                    
                     if (prepare==''){
                         $('#caught').html('<p> No Pokemon caught yet!! Gambateh!! </p>');
                     } else {
                         $('#caught').html(prepare);
                     };
-                };
+                }
             },
             error: function(error) {
                 console.log(error);

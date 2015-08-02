@@ -9,8 +9,9 @@ $(document).ready(function() {
               <option value="Fire">Fire</option>\
               <option value="Water">Water</option>\
               <option value="Ice">Ice</option>\
-              <option value="Physics">Physics</option>\
+              <option value="Psychic">Psychic</option>\
               <option value="Grass">Grass</option>\
+              <option value="Dark">Dark</option>\
             </select>\
           </div>\
           <div class="col-md-5 no-padding">\
