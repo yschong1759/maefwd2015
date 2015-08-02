@@ -52,8 +52,10 @@ function rankingCount(group) {
             temp3 = temp2.reverse();
             for(var i=0; i<temp3.length; i++) {
               rankingList = rankingList.concat(dict[temp3[i]].split(','));
-              $('#Ranking').html(rankingList.indexOf(group) + 1);
+              
             }
+            
+            $('#Ranking').html('OG Ranking :  ' + String(rankingList.indexOf(group) + 1));
       },
         error: function(query, error){
             console.log(error);
@@ -84,7 +86,7 @@ $(".clans").on('click', function(e){
 
     var matched = clans[to_be_rendered] || [];
     var bg_color = color[to_be_rendered];
-    console.log(bg_color);
+    
     var renderHtml = $.map(matched, function(matched){
         return '<div class="groups col-md-2" data-name="' + matched + '"> <img src="img/' + matched + '.jpg" class="pc-only img-responsive center-block"> \
         <div style="background-color:'+ bg_color +'" class="img-div-bottom text-center zero-padding pc-only">' + matched + '</div><img src="img/'+ matched +'.png" class="mobile-only center-block"> \
@@ -115,18 +117,17 @@ $(".clans").on('click', function(e){
                 //console.log(results[0]["attributes"]);
                 var result = results[0]["attributes"];
                 $('#OGimg').html('<center><img src="img/' + result["name"] + '.png"></center>');
-                $('#OGtype').html(result["type"]);
+                $('#OGtype').html('<div id="OGtype" class="text-center type"' + 'style="background-color:' + bg_color + '"' +'>'+ result["type"] + '</div>');
                 $('#OGname').html(result["name"]);
-                $('#Height').html(result["height"]);
-                $('#Weight').html(result["weight"]);
+                $('#Height').html('Height : ' + result["height"]);
+                $('#Weight').html('Weight : ' + result["weight"]);
                 $('#Description').html(result["description"]);
 
                 //Items below are for public page only
                 if ($('#ExperienceP') || $('#CoinP') || $('#Ranking') || $('#caught') ) {
-                    $('#ExperienceP').html(result["experience"]);
-                    $('#CoinP').html(result["coin"]);
-                    var temp = rankingCount(result["name"]);
-                    $('#Ranking').html(temp);
+                    $('#ExperienceP').html('EXP : ' + result["experience"]);
+                    $('#CoinP').html('POKÉCOINS : ' +result["coin"]);
+                    rankingCount(result["name"]); //html is in rankingCount function
 
                     // to display img for caught pokemon
                     var temp = result["caughtPokemon"];

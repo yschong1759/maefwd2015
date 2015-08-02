@@ -8,11 +8,11 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/drop_down_widget.css" rel="stylesheet">
   </head>
-  <title>MAE FWD 2015 - Live Score Page</title>
+  <title>MAE FWD 2015 Showdown</title>
   <body>
     <div class="navbar-default navbar-fixed-top">
-      <center><a href="index.html" style="text-decoration:none"><img src="img/mae.fwd.logo.png" style="width: 15%">
-          <p style="font-size:30px">MAE FWD 2015 Showdown</p></a></center>
+      <center><a href="index.html" style="text-decoration:none"><img src="img/mae.fwd.logo.png" class="imgPC imgMobile">
+          <p style="font-size:25px">FWD 2015 Showdown</p></a></center>
     </div>
     <div id="firstpage" class="container better first">
       <div class="col-md-1"></div>
@@ -59,50 +59,32 @@
       <div class="col-md-2"></div>
       <div class="col-md-8">
         <div class="container-fluid">
-          <div id="OGimg" class="col-md-4">
+          <div id="OGimg" class="col-md-5">
             <center><img src="img/mae.fwd.logo.png"></center>
           </div>
-          <div class="col-md-8">
-            <div id="OGtype" class="row">OG Type</div>
-            <div id="OGname" class="row">OG Name</div>
-            <div id="Height" class="row">Height</div>
-            <div id="Weight" class="row">Weight</div>
-            <div id="Ranking" class="row">OG Ranking</div>
+          <div class="col-md-7">
+            <div id="OGtype" class="row text-center type">OG Type</div>
+            <div id="Height" class="row text-center bold">Height</div>
+            <div id="Weight" class="row text-center bold">Weight</div>
+            <div id="Ranking" class="row fontImpact">OG Ranking</div>
+            <div id="ExperienceP" class="row fontImpact">Current point</div>
+            <div id="CoinP" class="row fontImpact">Current coin</div>
           </div>
         </div>
         <hr>
         <div class="container-fluid">
           <div class="panel panel-default">
-            <div class="panel-heading">Pokemon description</div>
-            <div id="Description" class="panel-body">Description here!!!</div>
+            <div id="OGname" class="panel-heading heading">Pokémon description</div>
+            <div id="Description" class="panel-body content">Description here!!!</div>
           </div>
         </div>
         <hr>
         <div class="container-fluid">
-          <h2>Current results</h2>
-          <div class="container-fluid">
-            <div class="panel panel-warning">
-              <div class="panel-heading">
-                <div class="panel-title">Exp Point</div>
-              </div>
-              <div id="ExperienceP" class="panel-body">Current point</div>
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <div class="panel-title heading">Pokémon Caught</div>
             </div>
-          </div>
-          <div class="container-fluid">
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <div class="panel-title">Pokecoin</div>
-              </div>
-              <div id="CoinP" class="panel-body">Current coin</div>
-            </div>
-          </div>
-          <div class="container-fluid">
-            <div class="panel panel-success">
-              <div class="panel-heading">
-                <div class="panel-title">Pokemon Caught</div>
-              </div>
-              <div id="caught" class="panel-body"></div>
-            </div>
+            <div id="caught" class="panel-body"></div>
           </div>
         </div>
       </div>

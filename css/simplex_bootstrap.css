@@ -6977,6 +6977,7 @@ label {
   color: #FFD700; 
   font-size: 30px;
   border-radius: 5px;
+  border: 1px solid black;
 }
 
 .img-div-onmobile{
@@ -6984,6 +6985,7 @@ label {
   margin: 10px;
   font-size: 20px;
   border-radius: 5px;
+  border: 1px solid black;
 }
 
 .clan2OG {
@@ -7008,4 +7010,44 @@ label {
 
 @media (min-width:992px){
   .better{margin-top: 200px;}
+}
+
+.type {
+  border-radius: 5px;
+  color: #FFD700;
+  font-size: 20px;
+  border-bottom: 1px black solid;
+}
+
+.bold {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  border-bottom: 3px black solid;
+}
+
+.fontImpact {
+  padding-top: 15px;
+  padding-left: 15px;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 25px;
+  color: black;
+}
+
+.heading {
+  font-family : Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.content {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+}
+
+
+@media (max-width:992px){
+  .imgMobile{height: 100px;}
+}
+
+@media (min-width:992px){
+  .imgPC{height: 150px;}
 }

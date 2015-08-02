@@ -9,17 +9,13 @@ function verify(username, password) {
     var name = 'username';
     query.find({
         success: function(name) {
-            console.log("Successfully retrieved " + name.length);
             // Do something with the returned Parse.Object values
             var dict = {};
             for (var i = 0; i < name.length; i++) {
               var object = name[i];
               dict[object.get('username')] = object.get('password') ;
             };
-            console.log(Object.keys(dict));
-            console.log(username in dict);
             if (username in dict && (password == dict[username]))  {
-              console.log('username and password match');
               $('.login').hide();
               $('#logingroup').removeClass('login');
               $('#firstpage').show();

@@ -9,15 +9,15 @@ html
 		link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel="stylesheet")
 		link(href="./css/drop_down_widget.css", rel="stylesheet")
 
-	title MAE FWD 2015 - Live Score Page
+	title MAE FWD 2015 Showdown
 
 	body
 
 		.navbar-default.navbar-fixed-top
 			center
 				a(href="index.html", style="text-decoration:none")
-					img(src="img/mae.fwd.logo.png", style="width: 15%")
-					p(style="font-size:30px") MAE FWD 2015 Showdown
+					img.imgPC.imgMobile(src="img/mae.fwd.logo.png")
+					p(style="font-size:25px") FWD 2015 Showdown
 
 		include cover-page.jade
 
@@ -26,26 +26,31 @@ html
 			.col-md-8
 
 				.container-fluid
-					.col-md-4#OGimg
+					.col-md-5#OGimg
 						center
 							img(src="img/mae.fwd.logo.png")
-					.col-md-8
-						.row#OGtype OG Type
-						.row#OGname OG Name
-						.row#Height Height
-						.row#Weight Weight
-						.row#Ranking OG Ranking
+					.col-md-7
+						.row.text-center.type#OGtype OG Type
+						.row.text-center.bold#Height Height
+						.row.text-center.bold#Weight Weight
+						.row.fontImpact#Ranking OG Ranking
+						.row.fontImpact#ExperienceP Current point
+						.row.fontImpact#CoinP Current coin
 
 				hr 
 
 				.container-fluid
-						.panel.panel-default
-							.panel-heading Pokemon description
-							.panel-body#Description Description here!!!
+					.panel.panel-default
+						.panel-heading.heading#OGname Pokémon description
+						.panel-body.content#Description Description here!!!
 
 				hr 
 
-				include public-result-display.jade
+				.container-fluid
+					.panel.panel-success
+						.panel-heading
+							.panel-title.heading Pokémon Caught
+						.panel-body#caught
 
 			.col-md-2
 
