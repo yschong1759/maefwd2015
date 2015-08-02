@@ -23,8 +23,10 @@ function verify(username, password) {
                window.scrollTo(0,0);
 
             } else {
-              console.log('not success');
-              $('#notSuccess').show()
+              $('#notSuccess').show().html('Check username or password again!');
+              $('#submitLogin').html('Login');
+              $('#submitLogin').prop('disabled', false);
+
             }
       },
         error: function(query, error){
@@ -35,5 +37,12 @@ function verify(username, password) {
 
 //triggered when click login button
 $('#submitLogin').on('click', function(){
-  verify($('#loginUser').val(), $('#loginPassword').val());
+  if (!(($('#loginUser').val()) && ($('#loginPassword').val()))) {
+    $('#notSuccess').show();
+    $('#notSuccess').html('Username or password not entered');
+  } else {
+    $(this).html('Logging In');
+    $(this).prop('disabled', true);
+    verify($('#loginUser').val(), $('#loginPassword').val());
+  }
 })
