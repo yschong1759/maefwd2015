@@ -93,25 +93,25 @@
         <hr>
         <div id="myForm" class="container-fluid">
           <h2>Input the scores</h2>
-          <form class="form-horizontal">
+          <form id="formHere" class="form-horizontal">
             <div class="form-group">
               <label for="experience" class="col-sm-3 control-label">Experience Gained</label>
               <div class="col-sm-9">
-                <input type="number" id="experience" class="col-sm-9 form-control">
+                <input type="number" id="experience" class="glowing form-control">
                 <div id="checkExp" style="margin-top: 10px" class="label label-default col-sm-4 hiding">Well done!</div>
               </div>
             </div>
             <div class="form-group">
               <label for="coin" class="col-sm-3 control-label">Pokécoin</label>
               <div class="col-sm-9">
-                <input type="number" id="coin" class="form-control">
+                <input type="number" id="coin" class="glowing form-control">
                 <div id="checkCoin" style="margin-top: 10px" class="label label-default col-sm-4 hiding">Well done!</div>
               </div>
             </div>
           </form>
           <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
           <h2>Pokemon caught</h2>
-          <form class="form-horizontal container-fluid selection-form">
+          <form id="selection-form" class="form-horizontal container-fluid selection-form">
             <div class="form-group selection no-margin">
               <label for="select" class="col-md-1 control-label"><i class="fa fa-lg fa-minus-square"></i></label>
               <div class="col-md-5 no-padding">
@@ -126,7 +126,7 @@
                 </select>
               </div>
               <div class="col-md-5 no-padding">
-                <select class="col-sm-3 form-control pokemonSelect"></select>
+                <select class="col-sm-3 glowing form-control pokemonSelect"></select>
               </div>
               <div class="col-md-1"></div>
             </div>

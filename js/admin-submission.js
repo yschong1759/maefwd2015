@@ -54,7 +54,7 @@ $('#coin').on('change', function(){
 $('#submitAll').on('click', function(){
 
     if (!(($('#experience').val()) || ($('#coin').val()))) {
-        alert('Nothing inputted! Check all entry. Caught pokemon may leave blank.');
+        alert('Put zero for EXP or coin if intended to leave blank. Pokemon caught may leave blank.');
     } else {
         $(this).html('Submitting');
         $(this).prop('disabled', true);

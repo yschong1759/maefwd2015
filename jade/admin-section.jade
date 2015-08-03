@@ -16,17 +16,17 @@
     .container-fluid#myForm
       h2 Input the scores
 
-      form.form-horizontal
+      form.form-horizontal#formHere
         .form-group
           label.col-sm-3.control-label(for="experience") Experience Gained
           .col-sm-9
-            input.col-sm-9.form-control(type="number", id="experience")
+            input.glowing.form-control(type="number", id="experience")
             .label.label-default.col-sm-4.hiding#checkExp(style="margin-top: 10px") Well done!
 
         .form-group
           label.col-sm-3.control-label(for="coin") Pokécoin
           .col-sm-9
-            input.form-control(type="number", id="coin")
+            input.glowing.form-control(type="number", id="coin")
             .label.label-default.col-sm-4.hiding#checkCoin(style="margin-top: 10px") Well done!
 
       include drop_down_widget.jade

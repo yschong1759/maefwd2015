@@ -109,6 +109,11 @@ $(".clans").on('click', function(e){
         $('.clan2OG').hide();
         $('.final').show();
         window.scrollTo(0,0);
+        document.getElementById("formHere").reset();
+        document.getElementById("selection-form").reset();
+
+        $('.pokemonSelect').html('');
+
 
         var Pokemon = Parse.Object.extend("pokemon");
         var query = new Parse.Query(Pokemon);

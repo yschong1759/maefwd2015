@@ -15,7 +15,7 @@ $(document).ready(function() {
             </select>\
           </div>\
           <div class="col-md-5 no-padding">\
-            <select class="col-sm-3 form-control pokemonSelect"></select>\
+            <select class="col-sm-3 glowing form-control pokemonSelect"></select>\
           </div>\
           <div class="col-md-1"></div>\
         </div>');

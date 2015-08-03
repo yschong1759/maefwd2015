@@ -7051,3 +7051,7 @@ label {
 @media (min-width:992px){
   .imgPC{height: 130px;}
 }
+
+.glowing {
+  border: 2px solid #f0d696;
+}
