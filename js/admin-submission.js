@@ -1,3 +1,5 @@
+Parse.initialize("fxS2moYN7SBJwg02HO9kMFMLFXzFIBs8EaS9s7vf" , "Ci7HRvQesSsQroPRJnNea7ofhuPjiwhof39kdp9n");
+
 // triggered when submission success
 function submitSuccess() {
     $('#myForm').hide();
@@ -70,8 +72,9 @@ $('#submitAll').on('click', function(){
             }
             //console.log(caughtPokemon);
         });
+        console.log($('#OGname').text().substr(7));
 
-        query.equalTo("name" , $('#OGname').text());
+        query.equalTo("name" , $('#OGname').text().substr(7));
         query.first({
             success: function(query) {
                 var experience = $('#experience').val();
@@ -96,4 +99,4 @@ $('#submitAll').on('click', function(){
                 submitFail();
             }});
     }
-    });
+    })
