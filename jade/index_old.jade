@@ -1,0 +1,62 @@
+doctype html
+
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible",content="chrome=1")
+		meta(name="viewport",content="width=device-width,initial-scale=1")
+		link(href="css/simplex_bootstrap.css", rel="stylesheet")
+		link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel="stylesheet")
+		link(href="./css/drop_down_widget.css", rel="stylesheet")
+
+	title MAE FWD 2015 Showdown
+
+	body
+
+		.navbar-default.navbar-fixed-top
+			center
+				a(href="index.html", style="text-decoration:none")
+					img.imgPC.imgMobile(src="img/mae.fwd.logo.png")
+					p(style="font-size:25px") FWD 2015 Showdown
+
+		include cover-page.jade
+
+		.container-fluid.final
+			.col-md-2
+			.col-md-8
+
+				.container-fluid
+					.col-md-5#OGimg
+						center
+							img(src="img/mae.fwd.logo.png")
+					.col-md-7
+						.row.text-center.type#OGtype OG Type
+						.row.text-center.bold#Height Height
+						.row.text-center.bold#Weight Weight
+						.row.fontImpact#Ranking OG Ranking
+						.row.fontImpact#ExperienceP Current point
+						.row.fontImpact#CoinP Current coin
+
+				hr 
+
+				.container-fluid
+					.panel(style="border-color: #FB5858")
+						.panel-heading.heading(style="background-color: #FB5858; color: #FFFFFF")#OGname Pokémon description
+						.panel-body.content#Description Description here!!!
+
+				hr 
+
+				.container-fluid
+					.panel(style="border-color: #FB5858")
+						.panel-heading(style="background-color: #FB5858; color: #FFFFFF")
+							.panel-title.heading Pokémon Caught
+						.panel-body#caught
+
+			.col-md-2
+
+		include footer.jade
+
+	script(src="js/jquery-1.11.0.js")
+	script(src="js/bootstrap.min.js")
+	script(src="http://www.parsecdn.com/js/parse-1.5.0.min.js")
+	script(src="js/clans-to-OGs.js")
